@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Link</title>
+    <style>
+        /* CSS for fixing the download button at the top */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .download-btn {
+            position: fixed; /* Fixes the button at the top */
+            top: 0; /* Places it at the very top of the page */
+            left: 50%; /* Centers the button horizontally */
+            transform: translateX(-50%); /* Ensures perfect centering */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50; /* Green color */
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000; /* Keeps it above other content */
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Optional: Adding some content below to demonstrate scrolling */
+        .content {
+            padding-top: 60px; /* Adjust this so content doesn't hide under the button */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed download button at the top -->
+    <a href="Getting Over It.zip" download class="download-btn">Download Getting Over It</a>
+
+    <!-- Some content below to show scrolling effect -->
+    <div class="content">
+
+        <!-- Add more content to demonstrate scrolling -->
+    </div>
+
+</body>
+</html>
